@@ -1,0 +1,157 @@
+@CHARSET "ISO-8859-1";
+
+div.mainBody {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #eee;
+	z-index: -1;
+}
+
+div.header {
+	min-height: 3em;
+	height: 3em;
+	min-width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #c23124;
+	color: white;
+	min-width: 100%;
+}
+
+.leftNav{
+	width: 12em;
+	position: fixed;
+	height: 100%;
+	top: 3em;
+	left: 0;
+	background-color: #db4a3d;
+}
+
+.invert {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	padding: 5px;
+}
+
+.expandCenterDiv {
+	position: relative;
+	margin-left: 0px;
+}
+
+div.hamburger {
+	position: relative;
+	float: left;
+	margin-right: 2%;
+	top: .25em;
+	left: .25em;
+	border-radius: 50%;
+	width: 2.5em;
+	height: 2.5em;
+	background-color: #ac2b20;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px #812118;
+	top: .25em;
+	margin-right: 2%;
+}
+
+div.leftSide {
+	position: relative:    
+	float:left;
+	height: 3em;
+	width: 20em;
+}
+
+div.leftSide_heading {
+	vertical-align: middle;
+	line-height: 2em;
+	font-size: x-large;
+}
+
+div.rightSide {
+	position: absolute;
+	right: 1em;
+	height: 3em;
+	top: 0;
+}
+
+.simple_anchor {
+	text-decoration: none;
+	color: white;
+}
+
+div.extraMenuDiv {
+	min-height: 2em;
+}
+
+div.menuDiv {
+	margin-left: 1em;
+	margin-bottom: 1em;
+	vertical-align: middle;
+	line-height: 2em;
+	font-size: large;
+}
+.mainBodyContentExpand {
+	margin-left: 0px !important;
+}
+
+div.centerDiv {
+	position: relative;
+	min-height: 100px;
+	margin: auto;
+	width: 90%;
+}
+.newPostContainer{
+	position: relative;
+	top: 1em;
+	margin-bottom: 2em;
+}
+
+.feedContainer{
+	position: relative;
+	margin-top: 4em;
+}
+.mainBodyContent{
+	margin-top: 4em;
+}
+
+.postText{
+	position: relative;
+	width: 90%;
+	margin: auto;
+}
+
+.postTextArea{
+	position: relative;
+	width: 100%;
+	min-height: 1.5em;
+	line-height: 1.5em;
+	vertical-align: middle;
+	resize: none;
+	font-size: 18px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);
+    border-width: 0;
+}
+
+.postTextAreaExpand{
+	min-height: 4em !important;
+}
+div.feedContainerBox{
+	position: relative;
+	width: 90%;
+	margin: auto;
+	display: block;
+}
+div.feeds1, .feeds2{
+	background-color: white;
+	min-height: 6em;
+	border-radius: 1px;
+	z-index:100;
+	box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);
+}
