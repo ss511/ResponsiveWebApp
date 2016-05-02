@@ -13,28 +13,33 @@ var indexJS = {
 	
 	toggleLoginPopup : function(){
 		$("#loginPopup").toggle('slide', {direction:"up"}, 100);
-	}
-};
-
-$(document).ready(function(){
-	var width = $(window).width();
-	$(window).resize(function(){
-		if($(this).width()!=width){
-			newWidth = $(this).width();
-			if((width>850 && newWidth<=850) || (width<=850 && newWidth>850)){
-				console.log(width+"  "+newWidth);
-				$("#leftNav").removeAttr("style");
-				width = newWidth;
-				$("#mainBodyContent").removeClass("mainBodyContentExpand");
+	},
+	
+	selectLogin : function(){
+		var loginDiv = $("#loginDiv");
+		var registerDiv = $("#registerDiv");
+		var loginSelector = $("#loginSelector");
+		var registerSelector = $("#registerSelector");
+		if(!(loginDiv.is(":visible"))){
+			registerDiv.removeClass("visibleSelectorDiv");
+			loginDiv.addClass("visibleSelectorDiv");
+			registerSelector.removeClass("selectedSelector");
+			loginSelector.addClass("selectedSelector");
+		}
+	},
+	
+	selectRegister : function(){
+		if(!$("#registerDiv").is(":visible")){
+			var loginDiv = $("#loginDiv");
+			var registerDiv = $("#registerDiv");
+			var loginSelector = $("#loginSelector");
+			var registerSelector = $("#registerSelector");
+			if(!(registerDiv.is(":visible"))){
+				loginDiv.removeClass("visibleSelectorDiv");
+				registerDiv.addClass("visibleSelectorDiv");
+				loginSelector.removeClass("selectedSelector");
+				registerSelector.addClass("selectedSelector");
 			}
 		}
-	});
-	
-	$("#postTextArea").focus(function(){
-		$("#postTextArea").addClass("postTextAreaExpand");
-	});
-	
-	$("#postTextArea").blur(function(){
-		$("#postTextArea").removeClass("postTextAreaExpand");
-	});
-});
+	}
+};

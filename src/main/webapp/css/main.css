@@ -22,7 +22,7 @@ div.header {
 	min-width: 100%;
 }
 
-.leftNav{
+.leftNav {
 	width: 12em;
 	position: fixed;
 	height: 100%;
@@ -59,7 +59,7 @@ div.hamburger {
 }
 
 div.leftSide {
-	position: relative:    
+	position: relative:     
 	float:left;
 	height: 3em;
 	width: 20em;
@@ -94,6 +94,7 @@ div.menuDiv {
 	line-height: 2em;
 	font-size: large;
 }
+
 .mainBodyContentExpand {
 	margin-left: 0px !important;
 }
@@ -104,27 +105,29 @@ div.centerDiv {
 	margin: auto;
 	width: 90%;
 }
-.newPostContainer{
+
+.newPostContainer {
 	position: relative;
 	top: 1em;
 	margin-bottom: 2em;
 }
 
-.feedContainer{
+.feedContainer {
 	position: relative;
 	margin-top: 4em;
 }
-.mainBodyContent{
+
+.mainBodyContent {
 	margin-top: 4em;
 }
 
-.postText{
+.postText {
 	position: relative;
 	width: 90%;
 	margin: auto;
 }
 
-.postTextArea{
+.postTextArea {
 	position: relative;
 	width: 100%;
 	min-height: 1.5em;
@@ -133,25 +136,118 @@ div.centerDiv {
 	resize: none;
 	font-size: 18px;
 	-webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);
-    border-width: 0;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	border-width: 0;
 }
 
-.postTextAreaExpand{
+.inputBox {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	border-width: 0;
+}
+
+.postTextAreaExpand {
 	min-height: 4em !important;
 }
-div.feedContainerBox{
+
+div.feedContainerBox {
 	position: relative;
 	width: 90%;
 	margin: auto;
 	display: block;
 }
-div.feeds1, .feeds2{
+
+div.feeds1, .feeds2 {
 	background-color: white;
 	min-height: 6em;
 	border-radius: 1px;
-	z-index:100;
-	box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);
+	z-index: 100;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+div.optionSelector {
+	margin-top: 1em !important;
+	position: relative;
+	width: 70%;
+	margin: 1em auto;
+	min-height: 2em;
+	background-color: white;
+}
+
+.selectedSelector {
+	background-color: #4d4d4d !important;
+	color: white !important;
+}
+
+.loginSelector, .registerSelector {
+	position: relative;
+	width: 50%;
+	color: #4d4d4d;
+	float: left;
+	min-height: 2em;
+	text-decoration: none;
+	text-align: center;
+	line-height: 2em;
+	vertical-align: middle;
+}
+
+.loginDiv {
+	position: relative;
+	margin: auto;
+	width: 70%;
+	display: none;
+}
+
+.registerDiv {
+	display: none;
+	position: relative;
+	margin: auto;
+	width: 70%;
+}
+
+.visibleSelectorDiv {
+	display: block !important;
+}
+
+.loginForm .registerForm {
+	position: relative; width : 100%;
+	margin: auto;
+	width: 100%;
+}
+
+.inputContainer {
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.loginInput, .registerInput {
+	width: 100%;
+	margin-bottom: 2em;
+	min-height: 2em;
+	line-height: 2em;
+	vertical-align: middle;
+}
+
+.buttonContainer {
+	position: relative;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 4em !important;
+}
+
+.formButton {
+	position: relative;
+	float: left;
+	margin-right: 10%;
+	vertical-align: middle;
+	line-height: 2em;
+	background-color: #ac2b20;
+	box-shadow: 2px 1px 2px #812118;
+	color: white;
+	width: 40%;
+	border-width: 0;
 }

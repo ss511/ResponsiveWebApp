@@ -9,6 +9,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.12.3.min.js" ></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-ui.min.js" ></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/index.js" ></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/events.js"></script>
 
 <fmt:setLocale value="en" />
 <fmt:setBundle basename="com.shashank.properties.text" />
