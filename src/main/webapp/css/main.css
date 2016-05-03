@@ -251,3 +251,12 @@ div.optionSelector {
 	width: 40%;
 	border-width: 0;
 }
+.genderRadio{
+	width: 100%;
+}
+.registerGenderSpan{
+	margin-right: 2%;
+}
+.registerGender{
+	background-color: white;
+}

@@ -41,10 +41,11 @@
 		<fmt:message key="header.reset" var="resetButton" />
 		<form class="loginForm">
 			<div class="inputContainer" id="loginInputContainer">
-				<label for="loginEmailId">${emailIdInput}</label> <input type="email"
-					class="emailId inputBox loginInput" id="loginEmailId" /> <label
-					for="loginPassword">${passwordInput}</label> <input type="password"
-					class="password inputBox loginInput" id="loginPassword" />
+				<label for="loginEmailId">${emailIdInput}</label> <input
+					type="email" class="emailId inputBox loginInput" id="loginEmailId" />
+				<label for="loginPassword">${passwordInput}</label> <input
+					type="password" class="password inputBox loginInput"
+					id="loginPassword" />
 			</div>
 			<div class="buttonContainer" id="loginButtonContainer">
 				<input type="submit" class="formButton" id="loginButton"
@@ -61,25 +62,37 @@
 		<fmt:message key="header.name" var="nameInput" />
 		<fmt:message key="header.reset" var="resetButton" />
 		<fmt:message key="header.contactNumber" var="contactNumberInput" />
+		<fmt:message key="header.gender" var="gender" />
+		<fmt:message key="header.genderMale" var="genderMale" />
+		<fmt:message key="header.genderFemale" var="genderFemale" />
+		<fmt:message key="header.genderNA" var="genderNA" />
 		<form class="loginForm">
 			<div class="inputContainer" id="registerInputContainer">
-				<label for="registerEmailId">${emailIdInput}</label> <input type="email"
-					class="emailId inputBox registerInput" id="registerEmailId" />
-				<label for="registerName">${nameInput}</label> <input type="text"
-					class="name inputBox registerInput" id="registerName" />
-				<label for="registerContactNumber">${contactNumberInput}</label> <input type="number"
-					class="name inputBox registerInput" id="registerContactNumber" />	
-				<label
-					for="password">${passwordInput}</label> <input type="password"
-					class="password inputBox registerInput" id="registerPassword" />
-					<label
-					for="registerRePassword">${rePasswordInput}</label> <input type="password"
-					class="rePassword inputBox registerInput" id="registerRePassword" />
+				<label for="registerEmailId">${emailIdInput}</label> <input
+					type="email" class="emailId inputBox registerInput"
+					id="registerEmailId" /> <label for="registerName">${nameInput}</label>
+				<input type="text" class="name inputBox registerInput"
+					id="registerName" /> <label for="registerContactNumber">${contactNumberInput}</label>
+				<input type="number" class="name inputBox registerInput"
+					id="registerContactNumber" /> <label for="password">${passwordInput}</label>
+				<input type="password" class="password inputBox registerInput"
+					id="registerPassword" /> <label for="registerRePassword">${rePasswordInput}</label>
+				<input type="password" class="rePassword inputBox registerInput"
+					id="registerRePassword" /> <label for="registerGender">${gender}</label>
+				<div class="genderRadio">
+					<span class="registerGenderSpan"><input type="radio"
+						class="registerGender" name="registerGender" value="${genderMale}" />${genderMale}</span>
+					<span class="registerGenderSpan"><input type="radio"
+						class="registerGender" name="registerGender"
+						value="${genderFemale}" />${genderFemale}</span><span
+						class="registerGenderSpan"><input type="radio"
+						class="registerGender" name="registerGender" value="${genderNA}" />${genderNA}</span>
+				</div>
 			</div>
 			<div class="buttonContainer" id="registerButtonContainer">
 				<input type="submit" class="formButton" id="registerButton"
-					value="${registerButton }" /> <input type="reset" class="formButton"
-					id="resetButton" value="${resetButton }" />
+					value="${registerButton }" /> <input type="reset"
+					class="formButton" id="resetButton" value="${resetButton }" />
 			</div>
 		</form>
 	</div>
