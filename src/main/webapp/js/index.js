@@ -4,9 +4,11 @@ var indexJS = {
 		if($(window).width()>850){
 			if($("#mainBodyContent").hasClass("mainBodyContentExpand")){
 				$("#mainBodyContent").removeClass("mainBodyContentExpand");
+				$("#subHeaderDiv").removeClass("subHeadeDivExpand");
 			}
 			else{
 				$("#mainBodyContent").addClass("mainBodyContentExpand");
+				$("#subHeaderDiv").addClass("subHeadeDivExpand");
 			}
 		}
 	},

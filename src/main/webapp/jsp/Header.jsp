@@ -98,5 +98,14 @@
 	</div>
 </div>
 <div class="subHeader" id="subHeader">
-	
+	<fmt:message key="subHeader.friendsFeeds" var="friendsFeeds" />
+	<fmt:message key="subHeader.trendingFeeds" var="trendingFeeds" />
+	<div class="subHeaderDiv" id="subHeaderDiv">
+		<div class="friendsFeedsDiv">
+			${friendsFeeds }
+		</div>
+		<div class="trendingFeedsDiv">
+			${trendingFeeds }
+		</div>
+	</div>
 </div>

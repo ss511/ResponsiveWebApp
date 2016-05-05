@@ -41,4 +41,18 @@ $(document).ready(
 					container.hide('slide', {direction:"up"}, 100);
 				}
 			});
+			
+			var myWindow = $(window);
+			var windowTop = myWindow.scrollTop();
+			myWindow.scroll(function(){
+				console.log(windowTop);
+				if(windowTop>150 && myWindow.scrollTop() > windowTop){
+					$('#subHeader').fadeOut();
+				}
+				else{
+					$('#subHeader').fadeIn();
+				}
+				windowTop = myWindow.scrollTop();
+			});
+			
 		});

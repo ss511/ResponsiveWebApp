@@ -108,7 +108,7 @@ div.centerDiv {
 
 .newPostContainer {
 	position: relative;
-	top: 1em;
+	top: 2em;
 	margin-bottom: 2em;
 }
 
@@ -259,4 +259,22 @@ div.optionSelector {
 }
 .registerGender{
 	background-color: white;
+}
+.subHeader{
+	width: 100%;
+	min-height: 2em;
+	background-color: #df5e53;
+	position: fixed;
+	top:3em;
+	left: 0;
+	min-width: 100%;
+	color: white;
+}
+.friendsFeedsDiv, .trendingFeedsDiv{
+	position: relative;
+	float: left;
+	width: 50%;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: center;
 }
