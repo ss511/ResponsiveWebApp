@@ -102,10 +102,10 @@
 	<fmt:message key="subHeader.trendingFeeds" var="trendingFeeds" />
 	<div class="subHeaderDiv" id="subHeaderDiv">
 		<div class="friendsFeedsDiv">
-			${friendsFeeds }
+			<a class="simple_anchor clickButton" href="#">${friendsFeeds}</a>
 		</div>
 		<div class="trendingFeedsDiv">
-			${trendingFeeds }
+			<a href="#" class="simple_anchor clickButton">${trendingFeeds}</a>
 		</div>
 	</div>
 </div>
